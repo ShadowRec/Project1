@@ -1,9 +1,15 @@
 .listing{
+    .container();
+    display: flex;
+    flex-direction: column;
+&__event-card{
+    max-width:  400px;
+    width:calc(33.333% - 40px);
+    margin: 0 30px 120px
+}
+&__events-list{
     display: flex;
     flex-wrap: wrap;
-    gap:120px 60px;
-&__card-event{
-    max-width: 405px;
-    width:calc(33.333% - 40px);
+    margin: 0 -30px -120px
 }
 }

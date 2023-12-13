@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="eng">
     @@include("blocks/head.html")
     <body class="body">
@@ -25,25 +24,20 @@
             <section class="offers home__offers">
                 
             </section>
-            <section class="about home__about">
-                
-            </section>
+            @@include('blocks/about.html', { class: 'home__about' })
             <section class="upcoming home__upcoming">
                 
             </section>
-            <section class="listing home__listing">
-                
-            </section>  
-            <section class="contact home__contact">
-                
-            </section>
+            @@include("events.html")
+            @@include('blocks/contact.html', { class: 'home__contacts' })
             <div class="doit home__doit">
                 
             </div>
-
+            
         </div>
     </header>
     </main>
-    @@include("blocks/footer.html")
+    @@include("blocks/page-footer.html")
+    @@include("blocks/event-pp.html")
     </body>
 </html>

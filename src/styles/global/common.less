@@ -3,7 +3,8 @@ html,body {
     margin: 0;
     padding: 0;
   }
-  body {
+ 
+  .body {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -22,18 +23,99 @@ html,body {
     overflow-x: hidden;
     padding-top: 147px;
   }
-  .main {
+  .main{
     flex: 1 0 auto;
+  }
+  .main-header {
+    padding:100px,0;
+   
+    &__title 
+    {
+        padding-left: 40px;
+        padding-right: 40px;
+        font-family: "lora",sans-serif;
+        font-weight: 400;
+        text-transform:uppercase;
+        text-align:center;
+        line-height: normal;
+        font-size: 45px;
+        color:black;
+        margin:0,0,70px;
+  }
+  &__text
+  {   
+      margin: 0  auto;
+      max-width: 1400px;
+      width: 100%;
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-bottom: 40px;
+      font-family: "lora",sans-serif;
+      font-weight: 400;
+      text-transform:uppercase;
+      text-align:center;
+      line-height: normal;
+      font-size: 45px;
+      color:black;
+  }
+  &__picture
+  {
+      display: block;
+      margin-bottom: 70px;
+      position: relative;
+      width: 100%;
+  }
+  &__picture::before
+  {
+      content:'';
+      display: block;
+      width: 100%;
+      padding-top: 16.92%;
+  }  
+  &__text{
+    padding-left: 40px;
+    padding-right: 40px;
+    font-family: "lora",sans-serif;
+    font-weight: 400;
+    text-transform:uppercase;
+    text-align:center;
+    line-height: normal;
+    font-size: 45px;
+    color:black;
+  }
+  &__img{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
   }
   .page-footer {
     flex: 0 0 auto;
   }
-  a {
+  .a {
     color: @black;
     outline: none;
   }
-  img {
+  .img {
     max-width: 100%;
     height: auto;
     object-fit: cover;
   }
+  .title{
+    box-sizing: border-box;
+    padding: 7px 45px 9px;
+    max-width: 624px;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    font-family: Lora;
+    font-size:36px;
+    font-weight: 500;
+    color: aliceblue;
+    font-style: normal;
+    text-transform: uppercase;
+    margin:0 0 150px;
+}

@@ -24,23 +24,18 @@
     
 }
 &__container{
+    .container();
     display: flex;
     align-items:center ;
     position: relative;
     justify-content: space-between;
-    margin: 0 auto;
-    box-sizing: border-box;
-    padding-left: 40px ;
-    padding-right: 40px;
-    max-width: 1414px;
-    width: 100%;
+   
 }
 &__nav{
     display: flex;
     align-items: baseline; 
 }
-&
-__nav-link{
+&__nav-link{
     color:brown;
     
     margin: 0 25px;
@@ -50,8 +45,7 @@ __nav-link{
     text-decoration: none;
 
 }
-&
-__logo
+&__logo
 {
     flex-shrink: 0;
     font-size: 0;
@@ -69,7 +63,24 @@ __logo
     font-weight: 600;
     color:blue;
     text-decoration: none;
+    transition:color 0.2s, background-color 0.2s,border-color 0.2s;
+    overflow: hidden;
+    cursor: pointer;
+    
+
+    
+    &:hover{
+        @media(hover:hover){
+            background-color: @black;
+            color: @white; 
+        }
+    }
+    &:active{
+        background-color: @black;
+        color: @white;
+    }
 }
+
 &__logo_img
 {
     width: 100%;
