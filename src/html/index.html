@@ -28,6 +28,7 @@
             <section class="upcoming home__upcoming">
                 
             </section>
+            @@include('blocks/blog-listing.html', {"class": "home__listing"})
             @@include("events.html")
             @@include('blocks/contact.html', { class: 'home__contacts' })
             <div class="doit home__doit">
@@ -37,6 +38,7 @@
         </div>
     </header>
     </main>
+   
     @@include("blocks/page-footer.html")
     @@include("blocks/event-pp.html")
     </body>

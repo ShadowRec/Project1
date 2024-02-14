@@ -1,0 +1,36 @@
+<section class="listing @@class">
+    <h2 class="listing__title section-title">Blog</h2>
+    <div class="listing__article-list">
+      <!-- prettier-ignore -->
+      @@loop('article-card.html', [
+        {
+          "class": "listing__article-card",
+          "img": "assets/images/orchestra.jpg",
+          "alt": "orchestra",
+          "title": "Music from games played by orchestra!",
+          "descr": "Most memorable music from different games played bu proffesionals on the big stage! Come and listen!",
+          "time": "26.11.2021",
+          "datetime": "2021-11-26T00:00"
+        },
+        {
+            "class": "listing__article-card",
+            "img": "assets/images/vrguitar.jpg",
+            "alt": "Vr guitar",
+            "title": "Rock n Ron in VR!",
+            "descr": "Try yourself at guitar plaiyng using VR technologies! Feel yourself like on the stage! ",
+            "time": "27.01.2023",
+            "datetime": "2021-11-26T00:00"
+          },
+          {
+            "class": "listing__article-card",
+            "img": "assets/images/sabaton.jpg",
+            "alt": "sabaton",
+            "title": "Sabaton on live!",
+            "descr": "Come and listen to Sabaton's bangers surrounded by tanks and other millitary vehicles! Here you will feel the power of human history! ",
+            "time": "29.11.2023",
+            "datetime": "2021-11-26T00:00"
+          }
+      ])
+    </div>
+    <a href="#" class="listing__link link">show all</a>
+  </section>

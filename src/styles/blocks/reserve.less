@@ -1,0 +1,31 @@
+.reserve {
+    &__tickets {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+    &__qty {
+      &::after {
+        content: " " attr(data-caption) " | " attr(data-price);
+      }
+    }
+    &__sum {
+      &::after {
+        content: attr(data-currency);
+        margin-left: 4px;
+        font-size: 0.95em;
+      }
+    }
+    &__total {
+      &::before {
+        content: attr(data-caption);
+        margin-right: 30px;
+      }
+      &::after {
+        content: attr(data-currency);
+        margin-left: 4px;
+        font-size: 0.95em;
+      }
+    }
+  }
+  
