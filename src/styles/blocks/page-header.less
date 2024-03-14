@@ -101,19 +101,17 @@
   }
 &__user-btn{
     box-sizing: border-box;
-    background-color: aliceblue;
+    background-color: rgba(182, 182, 182, 0.466);
     padding: 15px 40px ;
     border: 2px solid black;
     font-size: 16px;
     line-height: normal;
     font-weight: 600;
-    color:blue;
+    color:rgb(52, 52, 52);
     text-decoration: none;
     transition:color 0.2s, background-color 0.2s,border-color 0.2s;
     overflow: hidden;
     cursor: pointer;
-    
-
     
     &:hover{
         @media(hover:hover){
@@ -156,27 +154,7 @@
     display: none;
             
     
-    &::before,
-    &::after {
-      content: "";
-      display: block;
-      position: absolute;
-      top: 19px;
-      left: 11px;
-      width: 18px;
-      height: 2px;
-      border-radius: 2px;
-      background-color: @black;
-      transform-origin: 50% 50%;
-      transition: transform 0.4s, box-shadow 0.4s;
-    }
-    &::before {
-      top: 13px;
-      box-shadow: 0 6px 0 @black;
-    }
-    &::after {
-      top: 25px;
-    }
+    
     @media @bw1020 {
       display: block;
       position: relative;
@@ -187,8 +165,30 @@
       border: none;
       background: none;
     }
+    
     @media @bw768 {
         margin-left: 5px;
+      }
+      &::before,
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 19px;
+        left: 11px;
+        width: 18px;
+        height: 2px;
+        border-radius: 2px;
+        background-color: @black;
+        transform-origin: 50% 50%;
+        transition: transform 0.4s, box-shadow 0.4s;
+      }
+      &::before {
+        top: 13px;
+        box-shadow: 0 6px 0 @black;
+      }
+      &::after {
+        top: 25px;
       }
   }
   &__nav-user {
@@ -210,6 +210,6 @@
   &__nav-logout {
     width: 24px;
     height: 24px;
-    font-size: 0;
+   
   }
 }

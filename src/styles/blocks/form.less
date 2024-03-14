@@ -11,14 +11,14 @@
    }
    &__list  {
     width: 100%;
-
+    margin-bottom: 10px;
    }
    &__group{
     width: calc(50%-30px);
    }
    &__field{
     display: block;
-    
+    margin-bottom: 10px;
     width: 100%;
    
    &--w50{
@@ -30,7 +30,20 @@
 }
 &__btn{
     max-width: 400px;
+   width: 100%;
     
+   &__noneborder{
+    border: none;
+}
+}
+&__btns{
+    margin-top:30px;
+    display: flex;
+    gap:50px;
+    &:last-child{
+        border:none;
+    }
+
 }
    
 }

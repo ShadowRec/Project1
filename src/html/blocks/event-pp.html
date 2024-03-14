@@ -1,7 +1,7 @@
-<div class="pp">
+<div class="pp" id="js-eventPP">
     <div class="pp__container">
         <div class="pp_sticky-close">
-            <button type="button" class="pp__sticky-btn">
+            <button type="button" class="pp__sticky-btn js-ppCloseBtn" >
                 <svg class="pp__btn-icon" width= "24px" height="24px">
                     <use xlink:href ="assets/icons/symbols.svg#x"></use>
                 </svg>
@@ -10,7 +10,7 @@
         <div class="pp__wrapper">
             <h3 class="pp__title">
                 fill the form <br/>
-                and we will choose place for you!
+                and we will find place!
             </h3>
             <div class="pp__form form">
                 <div class="form__list">
@@ -89,7 +89,7 @@
                     <div class="form__list form__list--mb50">
                         <label class="field__field field__input--w50 field" >
                            <span>
-                            Имя*
+                            Name*
                            </span>
                                 <input type="text" class="field__input" placeholder="Name" name="name" required/>
 
@@ -143,7 +143,7 @@
                             <button type="submit" class="form__btn btn">
                                 send
                             </button>
-                            <button type="button" class="form__btn btn">
+                            <button type="button" class="form__btn  btn  js-ppCloseBtn" >
                                 close
                             </button>
                         </div>

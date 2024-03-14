@@ -46,18 +46,29 @@
       overflow:hidden;
     }
   }
-}
-.page-header_nav{
-  @media @bw1020{
-    transform: translateX(0);
+  
+  .page-header__nav{
+    @media @bw1020{
+      transform: translateX(0);
+    }
   }
-}
-.page-header_nav-toggle{
-  &::before{
-    transform: translate(0px,6px) rotate(-45deg) ;
-    box-shadow: none;
+  .page-header__nav-toggle{
+    &::before{
+      transform: translate(0px,6px) rotate(45deg) ;
+      box-shadow: none;
+    }
+    &::after{
+      transform: translate(0px,-6px) rotate(-45deg) ;
+    }
   }
-  &::after{
-    transform: translate(0px,6px) rotate(-45deg) ;
+  
+  
+}
+.show-event-popup{
+  .body{
+    overflow:hidden;
+  }
+  #js-eventPP{
+    display: flex;
   }
 }
