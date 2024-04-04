@@ -29,10 +29,10 @@
                 
             </section>
             @@include('blocks/blog-listing.html', {"class": "home__listing"})
-            @@include("events.html")
-            @@include('blocks/contact.html', { class: 'home__contacts' })
+            @@include("upcomming.html")
+            
             <div class="doit home__doit">
-                
+                @@include('blocks/contact.html', { class: 'home__contacts' })
             </div>
             
         </div>
@@ -42,5 +42,8 @@
     @@include("blocks/page-footer.html")
     @@include("blocks/event-pp.html")
     </body>
+    <script src="scripts/swiper-bundle.min.js"></script>
     <script src="scripts/main.min.js"></script>
+    
+  
 </html>
